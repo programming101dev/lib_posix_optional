@@ -51,10 +51,15 @@ target_link_libraries(p101_posix_optional PRIVATE -fsanitize=undefined)
 target_include_directories(p101_posix_optional PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
 # Link libraries (if needed)
-target_link_libraries(p101_posix_optional PRIVATE iconv)
 target_link_libraries(p101_posix_optional PRIVATE p101_error)
 target_link_libraries(p101_posix_optional PRIVATE p101_env)
 target_link_libraries(p101_posix_optional PRIVATE p101_c)
+
+find_library(ICONV_LIBRARY iconv)
+
+if(ICONV_LIBRARY)
+    target_link_libraries(p101_posix_optional PRIVATE ${ICONV_LIBRARY})
+endif()
 
 # Common compiler flags
 set(STANDARD_FLAGS
