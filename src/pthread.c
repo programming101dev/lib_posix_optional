@@ -187,7 +187,7 @@ int p101_pthread_attr_setscope(const struct p101_env *env, struct p101_error *er
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wunused-parameter"
 
-int p101_pthread_attr_setstack(const struct p101_env *env, struct p101_error *err, pthread_attr_t *attr, void *stackaddr, size_t stacksize)    // cppcheck-suppress constParameterPointer
+int p101_pthread_attr_setstack(const struct p101_env *env, struct p101_error *err, pthread_attr_t *attr, void *stackaddr, size_t stacksize)
 {
     int ret_val;
 
