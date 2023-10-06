@@ -37,8 +37,8 @@ extern "C"
      * @param envp
      * @return
      */
-    int p101_posix_spawn(const struct p101_env *env, struct p101_error *err, pid_t *restrict pid, const char *restrict path, const posix_spawn_file_actions_t *file_actions,
-                         const posix_spawnattr_t *restrict attrp, char *const argv[restrict], char *const envp[restrict]);
+    int p101_posix_spawn(const struct p101_env *env, struct p101_error *err, pid_t *restrict pid, const char *restrict path, const posix_spawn_file_actions_t *file_actions, const posix_spawnattr_t *restrict attrp, char *const argv[restrict],
+                         char *const envp[restrict]);
 
     /**
      *
@@ -72,8 +72,7 @@ extern "C"
      * @param mode
      * @return
      */
-    int p101_posix_spawn_file_actions_addopen(const struct p101_env *env, struct p101_error *err, posix_spawn_file_actions_t *restrict file_actions, int fildes,
-                                              const char *restrict path, int oflag, mode_t mode);
+    int p101_posix_spawn_file_actions_addopen(const struct p101_env *env, struct p101_error *err, posix_spawn_file_actions_t *restrict file_actions, int fildes, const char *restrict path, int oflag, mode_t mode);
 
     /**
      *
@@ -203,8 +202,8 @@ extern "C"
      * @param envp
      * @return
      */
-    int p101_posix_spawnp(const struct p101_env *env, struct p101_error *err, pid_t *restrict pid, const char *restrict file, const posix_spawn_file_actions_t *file_actions,
-                          const posix_spawnattr_t *restrict attrp, char *const argv[restrict], char *const envp[restrict]);
+    int p101_posix_spawnp(const struct p101_env *env, struct p101_error *err, pid_t *restrict pid, const char *restrict file, const posix_spawn_file_actions_t *file_actions, const posix_spawnattr_t *restrict attrp, char *const argv[restrict],
+                          char *const envp[restrict]);
 
 #ifdef __cplusplus
 }

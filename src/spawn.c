@@ -19,8 +19,8 @@
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wunused-parameter"
 
-int p101_posix_spawn(const struct p101_env *env, struct p101_error *err, pid_t *restrict pid, const char *restrict path, const posix_spawn_file_actions_t *file_actions,
-                     const posix_spawnattr_t *restrict attrp, char *const argv[restrict], char *const envp[restrict])
+int p101_posix_spawn(const struct p101_env *env, struct p101_error *err, pid_t *restrict pid, const char *restrict path, const posix_spawn_file_actions_t *file_actions, const posix_spawnattr_t *restrict attrp, char *const argv[restrict],
+                     char *const envp[restrict])
 {
     int ret_val;
 
@@ -70,8 +70,7 @@ int p101_posix_spawn_file_actions_adddup2(const struct p101_env *env, struct p10
     return ret_val;
 }
 
-int p101_posix_spawn_file_actions_addopen(const struct p101_env *env, struct p101_error *err, posix_spawn_file_actions_t *restrict file_actions, int fildes,
-                                          const char *restrict path, int oflag, mode_t mode)
+int p101_posix_spawn_file_actions_addopen(const struct p101_env *env, struct p101_error *err, posix_spawn_file_actions_t *restrict file_actions, int fildes, const char *restrict path, int oflag, mode_t mode)
 {
     int ret_val;
 
@@ -279,8 +278,8 @@ int p101_posix_spawnattr_setsigmask(const struct p101_env *env, struct p101_erro
     return ret_val;
 }
 
-int p101_posix_spawnp(const struct p101_env *env, struct p101_error *err, pid_t *restrict pid, const char *restrict file, const posix_spawn_file_actions_t *file_actions,
-                      const posix_spawnattr_t *restrict attrp, char *const argv[restrict], char *const envp[restrict])
+int p101_posix_spawnp(const struct p101_env *env, struct p101_error *err, pid_t *restrict pid, const char *restrict file, const posix_spawn_file_actions_t *file_actions, const posix_spawnattr_t *restrict attrp, char *const argv[restrict],
+                      char *const envp[restrict])
 {
     int ret_val;
 
