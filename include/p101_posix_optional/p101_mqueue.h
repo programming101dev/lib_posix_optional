@@ -17,8 +17,6 @@
  * limitations under the License.
  */
 
-#error "No functions exist in this header"
-
 #ifdef __cplusplus
 extern "C"
 {

@@ -17,8 +17,6 @@
  * limitations under the License.
  */
 
-#error "No functions exist in this header"
-
 #include <p101_env/env.h>
 #include <time.h>
 
