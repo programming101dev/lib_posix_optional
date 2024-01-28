@@ -25,14 +25,6 @@ extern "C"
 {
 #endif
 
-    /**
-     *
-     * @param env
-     * @param err
-     * @param op
-     * @param aiocbp
-     * @return
-     */
     int p101_aio_fsync(const struct p101_env *env, struct p101_error *err, int op, struct aiocb *aiocbp);
 
 #ifdef __cplusplus

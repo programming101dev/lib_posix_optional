@@ -24,22 +24,7 @@ extern "C"
 {
 #endif
 
-    /**
-     *
-     * @param env
-     * @param err
-     * @param policy
-     * @return
-     */
     int p101_sched_get_priority_max(const struct p101_env *env, struct p101_error *err, int policy);
-
-    /**
-     *
-     * @param env
-     * @param err
-     * @param policy
-     * @return
-     */
     int p101_sched_get_priority_min(const struct p101_env *env, struct p101_error *err, int policy);
 
 #ifdef __cplusplus
