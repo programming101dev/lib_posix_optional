@@ -1,4 +1,4 @@
-# c-examples Repository Guide
+# lib_posix_optional Repository Guide
 
 Welcome to the `lib posix optional` repository. This guide will help you set up and run the provided scripts.
 
